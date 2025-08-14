@@ -29,13 +29,10 @@ body {
   height: auto;
 }
 
-a {
-  text-decoration: underline;
-  color: #fff;
-}
 
 .sections {
   padding: 0 1em;
+    margin-bottom: 150px;
 }
 
 
@@ -86,11 +83,22 @@ p {
   margin: 0;
 }
 
+a {
+  font-family: "helveticabold";
+  font-size: 20px;
+  text-decoration: underline;
+  color: #fff;
+  line-height: 1.3;
+}
+
 .title p {
   font-size: 16px;
 margin-top: 7px;
 }
  
+.gb1{
+  color: #505050;
+}
 
 
 /* ------------------HERO */
@@ -148,8 +156,7 @@ hr {
   border:none;
   background-color: #505050;
   width: 100%; /* largura da linha */
-  margin-bottom: 80px;
-
+  margin-bottom: 100px;
 }
 
 .hr2 {
@@ -175,19 +182,6 @@ grid-column:5/span 7;
 }
 
 
-.subtitle {
-  text-transform: uppercase;
-  font-size: 16px;
-}
-
-.gb1 {
-  color: rgb(85, 85, 85);
-}
-
-.fright {
-  justify-self: end;
-}
-
 .title {
   grid-column: 1 / span 3;
   margin-bottom: 24px;
@@ -210,13 +204,6 @@ grid-column:5/span 7;
   padding-top: 1rem;
 }
 
-.cols-1 {
-  column-count: 1;
-}
-
-.cols-2 {
-  column-count: 2;
-}
 
 .grid-item {
   break-inside: avoid;
