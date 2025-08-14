@@ -9,9 +9,20 @@
 }
 
 @font-face {
-  font-family: helveticabold;
-  src: url(fonts/HelveticaNeue-Bold.otf);
+  font-family: "helveticabold";
+  src: url(fonts/HelveticaNeue-Bold.otf)
+  url(fonts/HelveticaNeue-Normal.woff) format('woff');
 }
+
+@font-face {
+  font-family: "helveticabold";
+  src: url("fonts/HelveticaNeue-Bold.woff") format("woff"),
+       url("fonts/HelveticaNeue-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 
 
 html,
@@ -20,7 +31,7 @@ body {
   padding: 0;
   max-width: 4000px;
   margin: 0 auto;
-  font-family: SV-Geist, Helvetica, sans-serif;
+  font-family: "helveticabold", Helvetica, sans-serif;
   font-weight: bold;
   background: black;
   background-size: cover;
@@ -46,7 +57,7 @@ body {
 
 h2{
 color: #00D1D1;
-font-family: "helveticabold";
+font-family: "helveticabold", Helvetica, sans-serif;
 font-size: 32px;
 font-style: normal;
 font-weight: 700;
@@ -55,7 +66,7 @@ line-height: normal;
 
 h3{
 color: #00D1D1;
-font-family: "helveticabold";
+font-family: "helveticabold", Helvetica, sans-serif;
 font-size: 18px;
 font-style: normal;
 font-weight: 700;
@@ -67,7 +78,7 @@ margin: 0;
 
 h4{
 color: #ffffff;
-font-family: "helveticabold";
+font-family: "helveticabold", Helvetica, sans-serif;
 font-size: 18px;
 font-style: normal;
 font-weight: 700;
@@ -77,7 +88,7 @@ margin: 0;
 }
 
 p {
-  font-family: "helveticabold";
+  font-family: "helveticabold", Helvetica, sans-serif;
   font-size: 20px;
   color: #fff;
   margin: 0;
@@ -85,7 +96,7 @@ p {
 }
 
 a {
-  font-family: "helveticabold";
+ font-family: "helveticabold", Helvetica, sans-serif;
   font-size: 20px;
   text-decoration: underline;
   color: #fff;
