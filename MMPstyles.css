@@ -1,0 +1,346 @@
+@font-face {
+  font-family: SV-Geist;
+  src: url(fonts/SV-Geist.ttf);
+}
+
+@font-face {
+  font-family: Geist-Regular;
+  src: url(fonts/Geist-Regular.ttf);
+}
+
+@font-face {
+  font-family: Geist-Mono-Regular;
+  src: url(fonts/GeistMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: Geist-Mono-Bold;
+  src: url(fonts/GeistMono-Bold.ttf);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 4000px;
+  margin: 0 auto;
+  font-family: SV-Geist, Helvetica, sans-serif;
+  font-weight: bold;
+  background: black;
+  background-size: cover;
+  animation: gradient 7s ease infinite;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.image-button {
+  background-color: #00d1d1;
+  width: 230px;
+  height: 50px;
+  background-image: url("images/logokick.svg");
+  background-size: 194px 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  position: fixed;
+  top: 0em;
+  z-index: 10;
+  transform: rotate(-0.25turn) translate(-90px, -90px);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+  padding: 0 1em;
+}
+
+h1,
+h2,
+h4,
+a,
+p {
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
+}
+
+.bold {
+  font-family: SV-Geist;
+}
+
+/* -------------------------- NAV BAR */
+
+.navbar {
+  position: sticky;
+  top: 1em;
+  width: auto;
+  margin-top: 37vh;
+  mix-blend-mode: difference;
+  z-index: 10;
+}
+
+h1 {
+  grid-column: 4 / 11;
+  color: #00d1d1;
+  font-size: 26px;
+}
+
+nav a {
+  grid-column: 12 / 13;
+  justify-self: end;
+}
+
+/* -------------------------- NAV BAR */
+
+/* ------------------HERO */
+.hero-section {
+  position: inherit;
+  margin-top: -1.5em;
+}
+
+.hero-section div {
+  grid-column: 4 / 8;
+}
+
+/* ------------------HERO */
+
+.subtitle {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.a2 {
+  padding-bottom: 2em;
+}
+
+h3 {
+  position: absolute;
+  font-size: 10px !important;
+  font-family: Geist-Mono-Bold;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #00d1d1 !important;
+  padding: 0px 0px;
+  line-height: 24px;
+  writing-mode: sideways-lr;
+  text-align: right;
+  height: 250px;
+}
+
+.gb1 {
+  padding-top: 2em;
+}
+
+.tag-section {
+  padding: 0 0 8em 0;
+  grid-column: 4 / span 9 !important;
+}
+
+.tag {
+  display: inline-block;
+  border: 1px solid #00d1d1;
+  padding: 0.5rem 0.5rem;
+  margin-right: 0.5em;
+}
+
+.tag p {
+  font-size: 10px;
+  font-family: Geist-Mono-Regular;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  vertical-align: middle;
+  text-align: center;
+  color: #00d1d1;
+}
+
+.fright {
+  justify-self: end;
+}
+
+.title {
+  grid-column: 1 / span 3;
+  margin-bottom: 24px;
+}
+
+.info {
+  grid-column: 4 / span 6;
+  margin-bottom: 24px;
+}
+
+#info {
+  padding-bottom: 10em;
+}
+
+#colophon {
+  padding-top: 5em;
+  padding-bottom: 10em;
+}
+
+.credits {
+  font-family: Geist-Regular;
+}
+
+#warning {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #8f8f8f;
+}
+
+.col-container {
+  display: flex;
+  align-items: stretch; /* This ensures children are equal height */
+  padding: 13px 0 0 0;
+  gap: 13px;
+}
+
+.col {
+  flex: 1;
+  display: flex;
+}
+
+.col img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* or contain if you don't want cropping */
+  display: block;
+}
+
+.grid-item {
+  break-inside: avoid;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 3px;
+  display: table-cell;
+}
+
+.stick {
+  mix-blend-mode: difference;
+  top: 0.8em;
+  margin-left: 50em;
+  position: sticky;
+  z-index: 10;
+}
+
+.stick2 {
+  mix-blend-mode: difference;
+  top: 0.8em;
+  margin-left: 50em;
+  margin-bottom: 2em;
+  position: sticky;
+  z-index: 10;
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 13px;
+  }
+
+  .hero-section {
+    padding: 3em 1em 0 1em;
+    height: 60vh;
+  }
+
+  .hero-section div {
+    grid-column: 1 / 6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  a,
+  p {
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+  }
+
+  .image-button {
+    transform: rotate(0) translate(0);
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  h1 {
+    grid-column: 1 / 5;
+  }
+
+  .navbar {
+    margin-top: 4vh;
+    top: 4em;
+  }
+
+  nav a {
+    grid-column: 5 / 6;
+  }
+
+  .title {
+    grid-column: 1 / 6;
+  }
+
+  .info {
+    grid-column: 1 / 6;
+  }
+
+  .stick {
+    margin-left: 0em;
+  }
+
+  .stick2 {
+    top: 4em;
+    margin: 1.5em 0em;
+  }
+
+  #info {
+    padding-bottom: 5em;
+  }
+
+  p {
+    padding-left: 2em;
+  }
+
+  .gb1 {
+    padding-top: 0;
+  }
+
+  .tag-section {
+    grid-column: 1 / 6 !important;
+    padding: 0;
+  }
+
+  .hero-section {
+    padding: 6em 1em 0 1em;
+    height: auto;
+  }
+
+  .tag {
+    display: block;
+    margin: 0.5em auto;
+  }
+
+  #info {
+    padding-bottom: 3em;
+    padding-top: 2em;
+  }
+
+  .info {
+    margin-bottom: 0px;
+  }
+
+  #colophon {
+    padding-bottom: 3em;
+  }
+}
