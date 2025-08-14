@@ -246,6 +246,7 @@ grid-column:5/span 7;
 
 }
 
+/*
 @media (max-width: 600px) {
   .grid-container {
     display: grid;
@@ -306,4 +307,106 @@ grid-column:5/span 7;
     padding-bottom: 5em;
   }
 
+}
+/*
+
+/* === DESKTOP PADRÃO (>=1200px) já é o código que tens fora das media queries === */
+
+/* LAPTOP / TABLET HORIZONTAL */
+@media (max-width: 1199px) {
+  .grid-container {
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 16px;
+  }
+
+  .title {
+    grid-column: 1 / span 3;
+  }
+
+  .info {
+    grid-column: 4 / span 5;
+  }
+
+  .img-container {
+    grid-column: 4 / span 5;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+/* TABLET VERTICAL / MOBILE GRANDE */
+@media (max-width: 899px) {
+  .grid-container {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 14px;
+  }
+
+  .hero-section div {
+    grid-column: 1 / -1;
+    margin-top: 10vh;
+  }
+
+  .title, .info, .img-container {
+    grid-column: 1 / -1;
+  }
+
+  nav {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+  }
+
+  .hero-section {
+    padding: 2em 1em 0;
+    height: auto;
+  }
+
+  .hero-section div {
+    margin-top: 5vh;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3, h4 {
+    font-size: 14px;
+  }
+
+  .navbar {
+    margin-top: 20vh;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .stick, .stick2 {
+    margin-left: 0;
+    position: static;
+  }
 }
